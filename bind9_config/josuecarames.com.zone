@@ -1,0 +1,60 @@
+$TTL 1d
+$ORIGIN josuecarames.com.
+
+@               	IN      SOA     dns.josuecarames.com. admin.josuecarames.com. (
+									2024053102              ; serial
+									12h                     ; refresh
+									15m                     ; retry
+									3w                      ; expire
+									2h                      ; minimum ttl
+									)
+									IN      NS      dns.josuecarames.com.
+dns             	IN      A       192.168.33.8
+
+pve1-server         IN      A       192.168.33.10
+pve2-server         IN      A       192.168.33.20
+pve3-server         IN      A       192.168.33.30
+vscode-server		IN		A		192.168.33.44
+pikvm				IN		A		10.0.0.176
+ntfy-server			IN		A		192.168.33.13
+dns-backup			IN		A		192.168.33.214
+authentik-server	IN		A		192.168.33.197
+controller      	IN      A       192.168.33.88
+cloudflare      	IN      A       192.168.33.170
+cloudflare-backup	IN		A		192.168.33.67
+kali-vm            	IN      A       192.168.33.5
+homepage			IN		A		192.168.33.12
+nas-server			IN		A		192.168.23.2
+portainer-server	IN		A		192.168.33.156
+unifi-server		IN		A		192.168.0.91
+kasm-server			IN		A		192.168.33.6
+www-server			IN		A		192.168.33.14
+prometheus-server	IN		A		192.168.33.71
+grafana-server		IN		A		192.168.33.71
+ilo1-server			IN		A		192.168.77.2
+ilo2-server			IN		A		192.168.77.3
+ilo3-server			IN		A		192.168.77.4
+mysql				IN		A		192.168.33.183
+traefik				IN		A		192.168.33.21
+uptime-server		IN		A		192.168.33.35
+vscode				IN		CNAME	traefik
+pve1				IN		CNAME	traefik
+pve2				IN		CNAME	traefik
+pve3				IN		CNAME	traefik
+kali				IN		CNAME	traefik
+ntfy				IN		CNAME	traefik
+uptime				IN		CNAME	traefik
+prometheus			IN		CNAME	traefik
+grafana				IN		CNAME	traefik
+nas					IN      CNAME	traefik
+kasm            	IN      CNAME	traefik
+ilo1            	IN      CNAME	traefik
+ilo2            	IN      CNAME	traefik
+ilo3            	IN      CNAME	traefik
+www             	IN      CNAME	traefik
+traefik-dashboard	IN		CNAME	traefik
+home				IN		CNAME	traefik
+portainer			IN		CNAME	traefik
+authentik			IN		CNAME	traefik
+pve					IN		CNAME	traefik
+unifi				IN		CNAME	traefik
